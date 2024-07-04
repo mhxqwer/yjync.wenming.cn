@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+	<title>中国文明网---您访问的页面已过期</title>
+	<style>
+
+body {background:#fff;margin:0;padding:0;}
+div,h3,p {margin:0;padding:0;}
+.errbox {background:url(images/wmw404-2022.png) left top no-repeat;width:1000px;margin:0 auto;height:360px;position:relative;}
+.errbox .box {position:absolute;left:380px;top:130px;font-family:"微软雅黑","黑体";color:#504e4e;width:580px;}
+.errbox .box h3 {font-size:25px;height:42px;}
+.errbox .box p {font-size:17px;}
+.errbox a {position:absolute;left:540px;top:195px;width:150px;height:42px;display:inline-block;}
+</style>
+    <script src="http://images.wenming.cn/web_wenming/images/public-jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="errbox" id="errbox">
+<div class="box">
+<h3>您访问的页面已过期，<span id="time">5</span>秒之后即将自动跳转至首页</h3>
+</div>
+<a href="http://www.wenming.cn/"><img src="images/wmw404-btn.png"></a>
+</div>
+<script type="text/javascript">
+function loadHeight(){
+	var bodyH=document.documentElement.clientHeight,
+		bodyW=document.documentElement.clientWidth,
+		box=document.getElementById("errbox"),
+		boxW=box.offsetWidth,
+		boxH=box.offsetHeight;
+	if(bodyH<=boxH){
+		box.style.marginTop="0px";
+	}else{
+		box.style.marginTop=(bodyH-boxH)/2+"px";
+	}
+	if(bodyW<=boxW){
+		box.style.marginLeft="0px";		
+	}else{
+		box.style.marginLeft=(bodyW-boxW)/2+"px";
+	}
+	
+	
+}
+loadHeight();
+window.onload=window.onresize=loadHeight;
+</script>
+<script language="javascript"> 
+
+ var setTime;
+        	var time=parseInt($("#time").text());
+        	  setTime=setInterval(function(){   
+                time--;
+                $("#time").text(time);
+					if(time==1){
+						window.location="http://www.wenming.cn/" 				
+					}
+            },1000);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/**
+*在Position属性值为absolute的同时，
+*如果有一级父对象（无论是父对象还是祖父对象，或者再高的辈分，一样）
+*的Position属性值为Relative时，则上述的相对浏览器窗口定位将会变成相对父对象定位，
+*这对精确定位是很有帮助的。
+*/
+*{
+    margin: 0;
+    padding: 0;
+	list-style-type:none;
+}
+
+body{font-family: "SimSun","黑体","Microsoft YaHei","微软雅黑","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto,PingFang SC","Hiragino Sans GB";}
+
+.main-cloum {
+    width: 1200px;
+	text-align:center;
+}
+
+.h150{ height:150px; margin:20px auto;}
+.h140{ height:140px; margin:30px auto;}
+
+.wmwlink{ 	width: 160px;    padding: 10px 0px;}
+
+.wmwtextlink{ background:url(../images/h_ssj.png)  no-repeat left 2px; color:#999999; font-size:16px; line-height:30px;text-decoration:none; padding-left:20px; }
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+/*nav导航盒子*/
+div.nav{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    background: #e52500;
+	font-family:"微软雅黑";
+	margin-top:0px;
+	
+}
+/*nav-main*/
+ul.nav-main{
+    width: 1200px;
+    height: 100%;
+    list-style-type: none;
+	margin:0px auto 0 auto;
+
+}
+ul.nav-main span{
+    display: inline-block;
+    margin-left: 5px;
+    width: 14px;
+    height: 10px;
+    background: url('../images/sj.png') no-repeat;
+}
+/*图标向上旋转*/
+.hover-up{
+    transition-duration: .5s;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+/*图标向下旋转*/
+.hover-down{
+    transition-duration: .5s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+/*导航条设置*/
+ul.nav-main>li{
+    width: 108px;
+    height: 100%;
+    display: block;
+    float: left;
+    background: #e52500;
+    color: #fff;
+    margin-right: 1px;
+	font-size:20px;
+	line-height:50px;
+    cursor: pointer;
+}
+ul.nav-main>li a{
+    background: #e52500;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+ul.nav-main>li:hover{
+    background: #e52500;
+}
+/*隐藏盒子设置*/
+div.hidden-box{
+    width: 124px;	
+    border: 0px solid #FF3333;
+
+    position: absolute;
+    display:none;
+	background-image:url(../images/dh1.png);
+	background-repeat:no-repeat;
+	background-position:center 0px;
+	border-radius: 5%;
+	padding-bottom:20px;
+}
+.hidden-box>ul{
+    list-style-type: none;
+    color: #643519;
+    cursor: pointer;
+	
+}
+
+.hidden-box li a{	
+	background-position:10px;
+	background-repeat:no-repeat;
+    color: #fff;
+	text-decoration:none;
+	font-size:20px;
+}
+
+
+
+.hidden-box li:hover{
+    /*background: #643519;*/
+	background-image:url(../images/c1_sj.png);
+	background-position:10px;
+	background-repeat:no-repeat;
+    color: #fff;
+
+}
+/*隐藏盒子位置设置*/
+.hidden-loc-index{position: absolute;
+
+    left: 295px;	
+	padding-top:10px;
+	top:0px;
+	
+}
+.hidden-loc-us{ position: absolute;
+    left: 420px;
+	padding-top:10px;
+	top:0px;
+	   
+}
+.hidden-loc-info{position: absolute;
+    left: 765px;
+	padding-top:10px;
+	top:0px;
+	    
+}
+.box04{position: absolute;
+	left:914px;
+	padding-top:10px;
+	top:0px;
+	    
+}
+
+
+.hot-title a:hover {
+    color: #f05b09;
+	
+}
+.hot-title a {
+    color: #182b95;
+	font-size:39px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:Microsoft YaHei,SimHei;
+	text-align:center;
+	width:1200px;
+	
+}
+.morelink{ background:url(../images/h_ssj.png)  no-repeat -7px 0px; color:#999999; width:30px; height:16px;  line-height:16px;text-decoration:none; padding-left:10px; float:right; margin-top:10px; }
+
+.morelink a { color: #adadad;text-decoration: none;	font-size:12px;}
+.morelink a:hover {color: #adadad;}

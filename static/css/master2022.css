@@ -1,0 +1,48 @@
+/* CSS Document */
+@charset "utf-8";
+*,body{padding: 0px;margin:0 auto;}
+/*  html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); }  */
+body { font-family:"SimSun","宋体","Microsoft YaHei","微软雅黑","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto,PingFang SC","Hiragino Sans GB"; color:#000;font-size:12px;text-align:left;background:#FFF;}
+dl,ul {padding:0;margin:0;}
+li{line-height:36px;list-style:none;}
+ol li{padding:0px;list-style:none;}
+dd{line-height:25px;}
+p{line-height:20px;}
+img {border: none;}
+a{text-decoration:none;color:#000;}
+.more{background:url(../images/h_ssj.png) no-repeat -7px 0px;float:right;font-weight:normal;font-size:12px; padding-left:10px;}
+.more a, .font6, .font6 a {color:#666;}
+.font3, .font3 a {color: #333;}
+.font9,.font9 a{color:#999;}
+.font-red,.font-red a{color:#F22400;}
+.font-blue,.font-blue a{color:#0059B2;}
+a:hover, .more a:hover, .red, .red a, .font3 a:hover, .font6 a:hover, .font9 a:hover {color:#C00; text-decoration: underline;}
+.clear {clear:both;}
+#logo{background:url(../images/logo2016.jpg) no-repeat;width:144px;height:70px;float:left;}
+#logo a {width:144px;height:70px; display: block;}
+.bold{font-weight:bold;}
+.left{float:left;}
+.right{float:right;}
+.mid{float:left;margin-left:10px;}
+.tcenter {text-align: center; }
+.no_Point{background:none;padding:0px;}
+.show .limar{display:block;}
+.hidden{display:none;}
+
+.noline{border:0px;}
+.hr_10,.hr_30,.hr_20,.hr_5,.hr_3,.hr_1 {height:10px;clear:both;font-size:1px;line-height:1px;overflow:hidden;}
+.hr_30{height:30px;}.hr_20{height:20px;}.hr_5{height:5px;}.hr_3{height:3px;}.hr_1{height:1px;}
+.sub_title{float:left;margin-right:10px;}
+.font_14{font-size:14px;}
+.font_12{font-size:12px;}
+.line{border-bottom:1px solid #CCC;height:1px;line-height:1px;overflow:hidden;}
+#idTRSNavigator{display:none;}
+.main .player {width: 640px;position:relative;}
+#sj2017ewm{ text-align: center; display: none; }
+.N_Point {background: url(../images/point.gif) left 10px no-repeat;padding-left: 8px;}
+ a:-webkit-any-link,a:-webkit-any-link:focus,a:focus {outline:0;}
+@media screen and (min-width:1439px) {
+	.main .player {width: 760px;position:relative;}
+	.copyright_box, .about {font-size: 14px;}
+}
+
